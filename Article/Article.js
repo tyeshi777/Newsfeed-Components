@@ -31,3 +31,14 @@ let articles = document.querySelectorAll(".article");
 articles.forEach(function(article) {
   return new Article(article);
 });
+
+TweenMax.to(".expandButton", 2, { x: 300, rotation: 360, scale: 0.5 });
+
+TweenMax.to(".date", 3, { x: 300 });
+
+TweenLite.to(".article", 2, {
+  backgroundColor: "#DCDCDC",
+  width: "70%",
+  top: "50px",
+  ease: Power2.easeInOut
+});

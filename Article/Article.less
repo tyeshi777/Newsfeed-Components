@@ -38,13 +38,21 @@
     cursor: pointer;
     transform: translate(-50%);
     background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    animation: pulse 3s infinite;
+  }
+  @keyframes pulse {
+    0% {
+      background-color: pink;
+      color: white;
+    }
+    100% {
+      background-color: grey;
+      color: yellow;
+    }
   }
 }
-
 .article-open {
   height: 400px;
 }
-
-
-
-
