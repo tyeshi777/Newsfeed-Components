@@ -42,3 +42,7 @@ TweenLite.to(".article", 2, {
   top: "50px",
   ease: Power2.easeInOut
 });
+
+// CustomWiggle.create("funWiggle", { wiggles: 10, type: "anticipate" });
+// TweenMax.to(".headerLambda", 2, { rotation: 30, ease: "funWiggle" });
+TweenMax.from(".headerLambda", 2, { y: -200, ease: "myBounce" });
